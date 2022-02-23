@@ -1,0 +1,729 @@
+birth yearly
+
+month	       year	births
+January	      2000	101
+February	    2000	168
+March      	  2000	271
+April	        2000	229
+May	          2000	287
+June	        2000	183
+July     	    2000	142
+August	      2000	238
+September	    2000	264
+October	      2000	263
+November	    2000	108
+December	    2000	152
+January    	  2001	291
+February	    2001	64
+March	        2001	289
+April	        2001	75
+May	          2001	141
+June	        2001	112
+July	        2001	285
+August	      2001	162
+September	    2001	96
+October	      2001	148
+November	    2001	69
+December	    2001	286
+January	      2002	274
+February	    2002	152
+March	        2002	248
+April	        2002	289
+May	          2002	112
+June	        2002	257
+July	        2002	125
+August	     2002	86
+September	   2002	123
+October	     2002	274
+November	   2002	131
+December	   2002	175
+January	     2003	70
+February	   2003	71
+March	       2003	54
+April	       2003	214
+May    	     2003	258
+June	       2003	103
+July	       2003	194
+August	     2003	97
+September	   2003	104
+October	     2003	235
+November	   2003	152
+December	   2003	142
+January	     2004	84
+February	   2004	285
+March	       2004	70
+April	       2004	261
+May	         2004	175
+June	       2004	199
+July	       2004	77
+August	     2004	202
+September	   2004	53
+October	     2004	157
+November	   2004	99
+December	   2004	58
+January	     2005	279
+February	   2005	242
+March	       2005	258
+April	       2005	115
+May	         2005	125
+June	       2005	204
+July	       2005	235
+August	     2005	158
+September	   2005	225
+October	     2005	224
+November	   2005	230
+December	   2005	269
+January	     2006	299
+February	   2006	201
+March	       2006	196
+April	       2006	299
+May	         2006	70
+June	       2006	136
+July	       2006	193
+August	     2006	243
+September	   2006	174
+October	     2006	62
+November	   2006	175
+December	   2006	185
+
+client data
+Core Information:
+● Instructor Name: David Dalsveen
+● Project Title: Data Visualization with Python
+
+Project Description:
+What hands-on artifact will learners have developed
+by the end of this project? Why will they want to
+know how to do this? Give a 200-300 word
+description of the project. This will appear on the
+Coursera platform.
+
+Visualizing data is used by virtually every discipline these days. It is used for analyzing
+web traffic to determine peak server load, growth and death rate of populations for
+biological analysis, analyzing weather patterns over time, stock market trends, and so
+on. Simply put, Data Visualization brings meaning to numbers that help people
+understand it. Seeing the data change can draw attention to trends and spikes that
+may otherwise go unnoticed. Python is an open-source (free) programming language
+has libraries that can be used to read and make useful graphics to present the data.
+In this course, you will create an application that reads data from CSV files. You will
+learn how to visualize the data using various techniques using existing Python libraries.
+
+Target Learner: Who will benefit from this
+project? Consider the job roles the learners currently
+perform, where they want to go in their career, how
+this project will benefit their goals, etc.
+
+This project will be a good starting point for learners who want to gain a good
+foundation with Python data visualization. It will demonstrate how to use Python to
+read and visualize data, which is an important part of data science.
+
+Project Prerequisites: List any knowledge or
+skill prerequisites needed to complete the project
+(e.g. familiarity with matplotlib or Excel
+spreadsheets)
+
+Learners should be familiar with some Python, including variables and input/output.
+Learners should also be familiar with using an IDE such as Visual Studio Code to create
+and launch projects.
+
+Number of Tasks in Project: Each Task is a
+Video in a Rhyme project. Each Task should have a
+clear learning objective, where the learner follows
+along in a hands-on way. Those learning objectives
+should contribute to the final artifact they are
+working toward.
+
+Five
+
+Expected Project length (mins):
+The whole project, so all Tasks combined, should be
+<1 hour total. Estimate 150-180 words per minute of
+video per Task. Suggested length is 4-7 minutes per
+video.
+
+55
+
+Software needed for Rhyme VM
+instance:
+
+Windows, Visual Studio Code, Chrome Browser (for reference)
+
+Project Learning Objectives:
+Before you design the Storyboard, list out the project objectives. “By the end of each Task, learners will be able to...”
+● LO1: Use pandas to produce a table to visualize the data.
+● LO2: Produce a data plot using MatPlotLib Pyplot.
+● LO3: Use Seaborn to create a scatterplot graph.
+● LO4: Create a heatmap to show correlations and distributions.
+● LO5: Create a Jointplot to show distribution.
+
+Task Names for Rhyme and Coursera: Create a Pandas DataFrame Table, MatPlotLib Plot, Scatterplot Graph, Heatmap plot, Jointplot
+Distribution
+Course Objectives: Create DataTable, Plot data with MatPlotLib, Use Seaborn to visualize data.
+
+Storyboard
+
+Section/
+Scene
+
+Learning
+Objective
+
+Script What is the
+visual for this
+Task? This
+appears in the
+VM instance
+
+Draft ideas to
+create quiz
+questions to
+test the core
+concepts for
+this Task
+
+Task 1 LO1 <SLIDE>
+
+Hello and welcome to our course on Data Visualization in Python.
+I’m Dave Dalsveen, your instructor for this course.
+In this course, you will create an application that reads data in a couple
+of different formats using the Pandas library. You will produce a table
+based on a dataframe to visualize the data.
+You will also
+You may already know that Python is one of two popular languages in
+the field of data science today. Virtually every major company including
+Google, Amazon, and IBM is involved in data science in some way. A
+part of the field of data science is the ability to visualize data, to make
+sense of data in human terms.
+If you have used Python before, you realize there are a lot of prebuilt
+libraries to help with application development. The Pandas MatplotLib
+and Seaborn are libraries essential to data visualization with Python.
+A popular data structure to use in Pandas is the DataFrame, due to its
+usefulness and simplicity. Because it is two dimensional, it is organized
+into rows and columns just as a spreadsheet is.
+<SLIDE>
+You will notice that there are two panels on your screen. I’ll be working
+on the panel on your right. That is where I’ll demonstrate and cover
+your lesson material. Your work will take place on the panel on the left.
+There, you can work along with me and get real hands-on practice that
+
+The Learner
+will learn how
+to create a
+visual table of
+data based on
+the dataframe.
+
+How do we
+create a table
+from the
+dataframe
+using a .csv
+file?
+
+makes this training so effective. Remember, you can pause the
+recording at any time to type in the code, run the code, and make
+corrections as we go.
+Now, let us get started!
+
+In this project, we will be staring with clean data sets represented in a
+json file and in CSV files. Using the Pandas, Matplotlib, and Seaborn
+libraries, we will visualize temperature and rainfall data from a particular
+region and see if the data are correlated in any way. We will also
+visualize birth data by year from a particular country to see when the
+most births occurred(year and month).
+1. You will see Visual Studio Code open with the PythonDataV
+loaded.
+2. In the code window, you will see the Python file already loaded.
+The file is called task1.py as you can see. We will be working in
+this file in this project, and then switch to a different file for each
+task. This will help to keep the code from getting too cluttered.
+
+3. Go into the code window and type: import pandas as pd
+The reason we use ‘as pd’ is so that we can access the Panda
+library classes using the handle ‘pd’ in the program.
+4. Next, import matplotlib.pyplot as plt
+This will allow us to show the plot we will create in this lesson
+using the dataframe.
+
+5. Next, create the dataframe itself. Type:
+#Create a DataFrame using the json data
+df = pd.read_json (r'./rain.json')
+
+6. Next output the DataFrame, which, it turns out is a nice
+representation of the data in table form: Type:
+#output the dataframe
+print (df)
+7. To get more insight into the data, we can also print some
+common statistics, all in one command using describe, Type:
+print("df statistics: " ,df.describe())
+8. Next, let us use the scatter plot method of the DataFrame plot
+object.
+df.plot.scatter(x='Rainfall', y = 'Temperature')
+
+9. It is important that the x and y assignments match what is in the
+DataFrame table column headings.
+10. Next, we can add a Label to identify what each dot means.
+Add Label before the closing parenthesis:
+label="Rainfall and Temperature"
+df.plot.scatter(x='Rainfall', y = 'Temperature', label="Rainfall and
+Temperature")
+11. Finally, we need to show the plot in a window. We will use the
+show method of PyPlot to create a window and show the
+resulting plot done by our dataframe!
+Type:
+plt.show()
+In this course, we concentrate on giving you a foundation in visualizing
+the data using MatPlotLib and Seaborn. Throughout the remaining
+lessons, we will read the data from a file, and see what tools Python
+gives us to visualize the data. Here is an example of one of our
+upcoming plots:
+
+<pause here>
+Great, now that you have had a taste of how we can visualize data using
+the DataFrame, let us move on to the next lesson.
+In the next lesson, we will go over visualizing the data with MatPlotLib’s
+pyplot plotting functions.
+
+Task 2 L02 Welcome back! Now that we know how to use a Dataframe to retrieve
+
+data and plot it, let us see how use PyPlot to plot the data.
+Remember, you can pause the recording at any time to analyze and
+type in the code, run the code, and make corrections..
+
+The learner will
+load data from
+a Dataframe
+
+How do you
+specify the
+width of a
+pyplot?
+
+First, we will open the file called task2.py.
+1. Open the file called task2.py.
+2. Add the same imports as we did in task1.
+Namely:
+import pandas as pd
+import matplotlib.pyplot as plt.
+3. Next, populate and print the DataFrame so that we have a visual
+reference!
+# 1 create the dataframe using the json file..
+df = pd.read_json (r'./rain.json')
+print((df)
+
+4. Next, let us try to plot the data using polyplot. We will plot the
+temperature according to month. We will need to extract the
+appropriate fields for the X-axis (Month), Y-Axis(Temperature).
+Type:
+plt.plot( df['Month'], df['Temperature'], label='Temperature')
+
+5. Next, use polyplot’s show method to create the window. Type:
+plt.show()
+
+into a Pyplot
+graph.
+
+6. The graph looks great, except it is not large enough to see all of
+the months. Before the plt.plot code, change the size by typing
+the following:
+plt.figure(figsize=(15,5))
+7. Now the frame is the correct size. You notice the X axis is
+labeled with months, so it’s meaning is quite obvious. What if
+we want to label the Y axis to indicate what it is referring to?
+Just prior to the plt.plot() code, Type:
+plt.ylabel("Temperature")
+
+8. As an exercise, try labeling the X axis with “Months” as well.
+We now have seen how to use pyplot to plot our data. In the next
+lesson we will start using a library built on top of MatPlotLib called
+Seaborn.
+
+Task 3 L03 Welcome back! We’ve seen how to create a plot using pyplot, now we’ll
+use a larger data set to visualize more interesting patterns using
+Seaborn.
+<SLIDE>
+Our goal in this lesson is to learn about how to start using Seaborn to
+visualize data using a scatterplot graph more easily. We will also see
+
+The learner will
+use Seaborn to
+create a
+scatterplot
+graph.
+
+what is the proper way to create scatter plot using seaborn?
+
+how to check for any possible correlation between two variables
+through visualization.
+Seaborn is built on top of MatPlotlib, so it includes all of the underlying
+functionality, but makes graphing data more pleasant.
+1. Open task3.py in Visual Studio Code.
+Include all of the libraries from the last task. Then add :
+import seaborn as sns
+2. This time, we will read from a larger file called tempYearly.csv. It
+includes yearly average rainfall and temperature for a certain
+region. We first need to read the data, which is in a CSV file:
+df = pd.read_csv(r'tempYearly.csv')
+3. We note the names of the columns in the CSV file, so we can
+access them to plot the data:
+#Temperature, Year and Rainfall
+4. Next, we plot Year on the X axis and Temperature on the Y axis:
+# 3 Scatter Plot
+sns.scatterplot(x='Year', y='Temperature', data=df)
+5. Next, use the show function to show the plot.
+plt.show()
+
+6. Notice the size of the window is too small to see all of the data.
+We can use the rc parameters from MatPlotLib to control the
+width and height. Just before the scatterplot line of code, type
+sns.set(rc={'figure.figsize':(12,6)})
+7. Run the code again, and you’ll see the issue has been fixed!
+8. Go ahead and try running a scatterplot on Year and Rainfall this
+time. Do you see a similar plot?
+9. Finally, let us plot Rainfall on the X axis and Temperature on the
+Y axis:
+sns.scatterplot(x='Rainfall', y='Temperature', data=df)
+plt.show()
+10. It looks as though there is trend in this data. Let us now run a
+regression line through the scatter and see if there is any
+possible correlation between rainfall and temperature.
+Replace the previous scatterplot code with:
+sns.regplot(x="Rainfall", y="Temperature", data=df)
+11. It looks like there is a positive correlation...(by the way, this
+doesn’t mean cause and effect).
+In this section, we learned how to use seaborne to visualize and analyze
+the data.
+In the next section, we will use another data set to create a heatmap.
+
+Task 4 L04 <Slide> Welcome back! In the previous lesson we learned how to use
+
+Seaborne to visualize and analyze the data.
+In this section we will use a heatmap graph to determine when a high
+number of births occurred in an unnamed region.
+Remember, you can pause the recording at any time to analyze and
+type in the code, run the code, and make corrections..
+
+1. Open the file called task4.py. Import the same libraries as we did
+in task 3.
+2. Next, let's take a look at the data in the file birthYearly.csv. It
+contains column headings month, year, and births. We need to
+note these so we can plot the appropriate data.
+3. A heatmap will visually tell us when the greatest number of birts
+occurred without having to sift through the numbers themselves.
+4. First, let us read and the data using the pandas library function
+again, and print it as well:
+data = pd.read_csv(r'./birthYearly.csv')
+print(data)
+5. Next, let us try to set up a heatmap. The data is the data we just
+read in. annot is set to true so we can see the birth numbers in
+the map. Fmt=d means the numbers are whole number decimals.
+sns.heatmap(data, annot=True, fmt="d”)
+6. Next, try to run the code. It won’t run because it is trying to read
+characters as numbers due to the format of the data. We need to
+
+The learner will
+Create a
+heatmap to
+show
+correlations
+
+How do you
+determine the
+correlation of a
+data set using
+Seaborn?
+
+set pivot points to re-arrange the data so it processes the
+numbers correctly. Remove the previous line of code and type the
+following to add pivots:
+dataP = data.pivot("month", "year", "births")
+print(dataP)
+7. Run the code. Do you see how the data has been re-arranged into
+a matrix? Next, we create the heatmap, this time using the new
+format.
+sns.heatmap(dataP, annot=True, fmt="d" )
+8. Now, run the code again. You can see the color code bar on the
+right side. The lighter the box, the higher the number. Conversely,
+the darker colors mean low numbers.
+In this lesson, we discovered how to use Python Pandas to create pivots
+to format the data properly for Seaborn’s heatmap. We learned that we
+can quickly visualize quantities of data using the heatmap..
+In the next section, we will learn how to visualize certain parts of data
+within a data set using Seaborn and jointplot.
+
+Task 5 L05 <Slide>
+
+Welcome back! In the previous module, We learned that we can quickly
+visualize quantities of data using the heatmap.
+
+The learner will
+create a
+jointplot to
+show
+
+In this section you will learn how to visualize parts of the data set by
+selecting parts of the DataFrame using Pandas along with seaborn’s
+jointplot. With jointplot, you can visualize the distribution behind a
+scatter plot.
+Remember, you can pause the recording at any time to analyze and
+type in the code, run the code, and make corrections..
+1. Open the file called task5.py. Import the same libraries you did
+in the previous task.
+2. Next, read in yearly rainfall and temperature data using pandas.
+data = pd.read_csv(r'./tempYearly.csv')
+3. With Pandas, you can select a particular column from the
+DataFrame by selecting its name. We will pass just the
+Temperature and Rainfall only. Type:
+sns.distplot(data[['Rainfall','Temperature']])
+plt.show()
+The distribution plot shows the likelihood of a value falling in a
+certain range (the blue area here).
+4. Next, take the we will use a jointplot to look at the scatter plot
+of rainfall vs temperature and also the distribution.
+sns.jointplot("Rainfall","Temperature",data=data)
+plt.show()
+5. Run this. Notice how you can drag your mouse around the
+distribution regions surrounding the scatter plot and see the
+x(rainfall) and y(temperature) values?
+
+distribution of
+a dataset.
+
+6. Finally, add kind=”hex” to the parameters of the jointplot
+function call as in:
+sns.jointplot("Rainfall","Temperature",data=data, kind="hex")
+
+data:
+548	715	602	544	423	645	437	891	963	383	791	528
+568	925	71	87	20	832	778	870	978	799	461	780
+118	639	143	944	521	414	264	774	456	568	18	617
+612	616	943	681	359	437	697	60	666	670	210	128
+315	363	570	438	988	102	208	161	653	253	466	244
+158	110	656	138	196	368	820	97	837	96	976	468
+976	604	739	39	282	120	296	118	317	414	64	692
+566	265	523	93	575	929	318	667	131	716	289	183
+586	20	828	4	  677	270	735	962	248	576	592	572
+223	952	447	846	699	297	813	396	881	581	881	692
+725	501	956	643	423	606	19	301	660	290	618	428
+135	298	569	590	574	653	652	431	896	367	435	891
+
+
+Rain:
+Month	     Rainfall	 Temperature
+January	   1.65	     3
+February	 1.25	     10
+March	     1.94	     15
+April	     2.75	     20
+May	       3.14	     25
+June	     3.645	   24
+July	     5.5	     30
+August	   1	       1
+September	 1.3	     33
+October		
+November	 0.5	     32
+December	 2.3	     2.3
+
+code
+{"Month":{"0":"January","1":"February","2":"March","3":"April","4":"May","5":"June","6":"July", "7":"August", "8":"September",
+    "9":"October","10":"November", "11":"December"},
+    "Rainfall":{"0":1.65, "1":1.25, "2":1.94, "3":2.75,"4":2.75,"5":3.645,"6":5.5,"7":1.0,"8":1.3,"9":2,"10":0.5,"11":2.3},
+    "Temperature":{"0":7, "1":10, "2":15, "3":20,"4":25,"5":24,"6":30,"7":40,"8":33,"9":20,"10":32,"11":10}
+}
+
+
+TASK 1:
+import pandas as pd 
+import matplotlib.pyplot as plt 
+
+
+df = pd.read_json(r'./rain.json')
+print(df)
+
+print("df statistics: ",df.describe())
+
+df.plot(x='Month', y = 'Temperature')
+df.plot(x='Month', y = 'Rainfall')
+plt.show()
+
+TASK 2:
+import pandas as pd 
+import matplotlib.pyplot as plt 
+import seaborn as sns
+
+df = pd.read_json(r'./rain.json')
+
+plt.figure(figsize=(15,5))
+plt.plot( df['Month'], df['Temperature'], lable='Temperature')
+plt.show()
+
+
+plt.figure(figsize=(17,5))
+plt.plot( df['Month'], df['Rainfall'], lable='Rainfall')
+plt.show()
+
+
+plt.plot( df['Month'], df['Rainfall'], label='Rainfall')
+plt.plot( df['Month'], df['Temperature'], lable='Temperature')
+plt.legend()
+plt.show()
+
+
+
+TASK 3:
+mport pandas as pd 
+import matplotlib.pyplot as plt
+import seborn as sns
+
+df = pd.read_csv(r'tempYearly.csv')
+
+sns.scatterplot(x='Year', y='Temperature', data = df)
+plt.show()
+
+
+sns.set(rc={'figure.figsize':(12,6)})
+sns.regplot(x='Year', y='Temperature', data = df)
+
+
+
+TASK 4:
+import pandas as pd 
+import matplotlib.pyplot as plt
+import seaborn as sns
+
+data = pd.read_csv(r'./brithYearly.csv')
+print(data) 
+
+dataP = data.pivot("month", "year", "births")
+print(dataP)
+
+sns.heatmap(data, annot=True,fmt="d")
+
+plt.show()
+
+
+
+TASK 5:
+import pandas as pd 
+import matplotlib.pyplot as plt 
+import seaborn as sns
+
+data = pd.read_csv(r'./tempYearly.csv')
+print(data) 
+
+sns.jointplot("Rainfall", "Temperature",data=data)
+plt.show()
+sns.jointplot("Rainfall", "Temperature",data=data ,kind="hex")
+plt.show()
+sns.jointplot("Rainfall", "Temperature",data=data ,kind="reg")
+plt.show()
+
+TEMPERATUREYEARLY:
+Temperature	Year	Rainfall
+16.99	      1956	1.01
+10.34	      1957	1.66
+21.01	      1958	3.5
+23.68	      1959	3.31
+24.59	      1960	3.61
+25.29	      1961	4.71
+8.77	      1962	2
+26.88	      1963	3.12
+15.04	      1964	1.96
+14.78	      1965	3.23
+10.27	      1966	1.71
+35.26	      1967	5
+15.42	      1968	1.57
+18.43	      1969	3
+14.83	      1970	3.02
+21.58	      1971	3.92
+12.33	      1972	1.67
+16.29	      1973	3.71
+16.97	      1974	3.5
+20.65	      1975	3.35
+17.92	      1976	4.08
+20.29	      1977	2.75
+15.77	      1978	2.23
+39.42	      1979	7.58
+19.82	      1980	3.18
+17.81	      1981	2.34
+13.37	      1982	2
+12.69	      1983	2
+21.7	      1984	4.3
+19.65	      1985	3
+9.55	      1986	1.45
+18.35	      1987	2.5
+15.06	      1988	3
+20.69	      1989	2.45
+17.78	      1990	3.27
+24.06	      1991	3.6
+16.31	      1992	2
+16.93	      1993	3.07
+18.69	      1994	2.31
+31.27	      1995	5
+16.04	      1996	2.24
+17.46	      1997	2.54
+13.94	      1998	3.06
+9.68	      1999	1.32
+30.4	      2000	5.6
+18.29	      2001	3
+22.23	      2002	5
+32.4	      2003	6
+28.55	      2004	2.05
+18.04	      2005	3
+12.54	      2006	2.5
+10.29	      2007	2.6
+34.81	      2008	5.2
+9.94	      2009	1.56
+25.56	      2010	4.34
+19.49	      2011	3.51
+38.01	      2012	3
+26.41	      2013	1.5
+11.24	      2014	1.76
+48.27	      2015	6.73
+20.29	      2016	3.21
+13.81	      2017	2
+
+
+Visual Studio Code:
+The main Visual Studio Icons we are using are:
+Explorer
+Run->run without debugging
+Code editor Window
+
+Task1: Create a Pandas DataFrame Table
+Create:
+1.A Table using Pandas dataframe and print.
+2.Statistics based on the table values.
+3.A Line graph with an X axis and Y axis using Pandas
+4.A window showing the graph using Matplotlib’s pyplot.
+
+Task2: MatPlotLib PyPlot
+Create:
+1.A Pyplot plot using Temperature and Month.
+2.A Pyplot using Month and Temperature.
+3.A Pyplot plot using Month on the X axis, Temperature and Rainfall together on the Y.
+4.Create a Legend for the graph.
+
+Task3: Scatterplot Graph
+1.Introducing the Seaborn library
+2.Built atop MatplotLib.
+3.Create a plot with individual data points scattered
+4.Create a regression to show possible correlation
+
+Task4: Seaborn Heatmap
+1.Popular type of graph--Good for spotting large and small values quickly.
+2.Sometimes requires data to be reorganized into a Matrix using pivots.
+3.Has a color key on the side.
+4.Create using a new births data set: (month, year, number of births
+
+Task5: Seaborn JointPlot
+1.Popular type of graph--Good for looking at distribution and data points at the same time.
+2.Has option to display different kind of graph- the parameter called kind.
+3.Here, we will see scatter with regression line, as well as distribution.
+ 
+
+
+
+
+
+
+
